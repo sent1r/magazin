@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :products
 
-  root 'products#index'
+  root to: 'products#index'
 
   match '/new', to: 'products#new', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
